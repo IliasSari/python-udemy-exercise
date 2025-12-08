@@ -1,11 +1,11 @@
-# def greet():
-#     print("Hello")
-#     print("How do you do?")
-#     print("Isn't the weather nice?")
+# def greet_with_name(name):
+#     print(f"Hello {name}")
+#     print(f"How do you do {name}?")
+# greet_with_name("Ilias")
 
-# greet()
-
-def greet_with_name(name):
+# functions with more one input
+def greet_with(name, location):
     print(f"Hello {name}")
-    print(f"How do you do {name}?")
-greet_with_name("Ilias")
+    print(f"WHat is it like in {location}?")
+
+greet_with(name="Ilias", location="Thessaloniki")
