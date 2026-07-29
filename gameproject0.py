@@ -33,6 +33,10 @@ if __name__ == "__main__":
         play_game()
         
         play_again = input("\nΘέλεις να ξαναπαίξεις; (ναι/οχι): ").lower()
-        if play_again != 'ναι':
-            print("Ευχαριστούμε που έπαιξες! Αντίο!")
+        while play_again not in ['ναι', 'οχι']:
+            print("Παρακαλω, επιλέξτε ναι η οχι")
+            play_again = input("Θελεις να ξαναπαιξεις; (ναι/οχι): ").lower()
+
+        if play_again == 'οχι':
+            print("Ευχαριστουμε που επαιξες! Αντιο!")
             break
